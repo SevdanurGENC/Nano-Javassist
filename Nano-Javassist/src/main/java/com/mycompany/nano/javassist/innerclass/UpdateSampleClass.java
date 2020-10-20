@@ -14,12 +14,18 @@ import java.lang.reflect.InvocationTargetException;
  * @author Nano
  */
 public class UpdateSampleClass {
+    
+    public static ClassPool cp;
+    public static CtClass cc;
+    public static CtMethod method;
+    public static CtConstructor ctc;
 
-    public static void main(String[] args) throws NotFoundException, CannotCompileException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, IOException {
+    public static void main(String[] args) throws NotFoundException, CannotCompileException, 
+            NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, IOException {
 
-        ClassPool cp = ClassPool.getDefault();
-        CtClass cc = cp.get("com.mycompany.nano.javassist.innerclass.SampleClass$InnerClass");
-        CtConstructor ctc = cc.getConstructors()[0];
+        cp = ClassPool.getDefault();
+        cc = cp.get("com.mycompany.nano.javassist.innerclass.SampleClass$InnerClass");
+        ctc = cc.getConstructors()[0];
 
         ctc.setBody("{if(\"falseParameter\".equals($2)){$2=\"trueParameter\";} "
                 + "this.temp = $2;"
@@ -35,4 +41,4 @@ public class UpdateSampleClass {
 
         System.out.println(old.getInnerField());
     }
-}
+} 
