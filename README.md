@@ -7,3 +7,11 @@ This repo contains examples of Javassist operating principles.
 ## This second commit contains example of insert to class.
 ![image](https://user-images.githubusercontent.com/5441882/96655603-939b5080-1346-11eb-81ad-343b4c3c5f71.png)
 
+## This third commit contains example of insert to interface class.
+![image](https://user-images.githubusercontent.com/5441882/96798095-cf96ea00-1408-11eb-9555-e00754caff9c.png)
+
+## This second commit contains example of insert to setget class.
+![image](https://user-images.githubusercontent.com/5441882/96798172-fb19d480-1408-11eb-95aa-6150b1443f2b.png)
+
+![image](https://user-images.githubusercontent.com/5441882/96798220-17b60c80-1409-11eb-9b22-a60b2bb3bf6a.png)
+
